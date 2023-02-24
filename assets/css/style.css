@@ -1,0 +1,90 @@
+/*Para todos los htmls*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 54.3744%; /*El font size por defecto me da
+  18,391px. Entonces para que 1rem = 10px hago regla de 3 
+  simple y me da 54.3744%. */
+}
+
+html,
+body {
+  min-height: 100% !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+/*Para los Html's elaborados con bootstrap. (Es lo que no me salió desde las clases en html)*/
+
+header {
+  background-color: #e2531c; /*Estos colores no estaban disponibles en la clase*/
+}
+
+header a:hover {
+  background-color: #cb4a19; /*Estos colores no estaban disponibles en la clase*/
+}
+
+.naranja {
+  background-color: #e2531c; /*Estos colores no estaban disponibles en la clase*/
+  margin: 10px auto !important; /*No me tomaba el margin en la clase*/
+}
+
+.alto-total {
+  height: 60rem !important; /*No me funciono el stretch, o darle tamaños a las filas. A las columnas Sí pero a las filas 
+  solo tomaba el tamaño de su contenido.*/
+}
+
+.alto-tercera-parte {
+  height: 20rem !important; /*No me funciono el stretch, o darle tamaños a las filas. A las columnas Sí pero a las filas 
+  solo tomaba el tamaño de su contenido.*/
+}
+
+.letra-mediana {
+  font-size: 2rem; /*Tampoco estaba la opción de elegir el tamaño exacto de letra desde la clase de bootstrap.*/
+}
+
+footer div {
+  background-color: #aaaaaa;
+}
+
+footer img {
+  height: 1rem;
+  width: auto !important;
+  margin-right: 0.25rem;
+}
+
+/*Html's elaborados sin bootstrap, con BEM*/
+
+.footer__div--carta {
+  background-color: #aaaaaa;
+  margin: 0 5%;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: 1rem;
+  box-sizing: border-box;
+  width: 90%;
+  border: 0.2rem solid black;
+  display: none; /*Mientras esten el formulario de las cookies, no se 
+  va a ver el footer. Cuando el usuario Acepte va a desaparecer el formulario
+  y aparecer el footer. Eso lo voy a hacer con javascript cuando el usuario
+  aprete el submit de las cookies.*/
+  z-index: -1;
+}
+
+.footer__div--carta {
+  display: inline-block;
+  position: relative;
+  bottom: -0.25rem;
+}
+
+.footer__p {
+  justify-content: center;
+  display: flex;
+  color: white;
+}

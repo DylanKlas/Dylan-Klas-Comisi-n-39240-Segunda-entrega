@@ -1,0 +1,5 @@
+Se han elaborado nuevos moqups, habiendose modificado todo el diseño de las páginas. Estos se encuentran en la carpeta "nuevos moqups".
+Se han cambiado la interacción entre las mismas.
+Se finalizó los 2 sitios con bootstrap "login.html" y "aboutus.html".
+Se sigue trabajando en los otros 3 sitios "index.html", "map.html" y "ong.html". Los html sí estarían terminados y elaborados con la metodología BEM. Sin embargo, aún queda mucho trabajo por realizar en CSS, y es por eso que se ven de forma erronea.
+Se espera poder avanzar y terminar los 5 htmls con sus css's, y agregar un html más llamado "catalog.html". 
